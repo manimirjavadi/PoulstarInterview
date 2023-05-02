@@ -17,7 +17,7 @@
     </div>
     <div class="bg-white relative">
       <slot />
-      
+
       <Contact />
     </div>
 
@@ -28,9 +28,8 @@
 </template>
 
 <script setup>
-import Header from '@/components/web/header.vue'
-import Footer from '@/components/web/footer.vue'
+import Header from "@/components/web/header.vue";
+import Footer from "@/components/web/footer.vue";
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
