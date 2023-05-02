@@ -12,7 +12,7 @@
       <Bubble class="w-[55px] h-[55px] absolute bottom-[50px] left-[75px]" />
     </div>
 
-    <div class="relative z-10">
+    <div class="relative z-30">
       <Header />
     </div>
     <div class="bg-white relative">

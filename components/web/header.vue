@@ -16,7 +16,7 @@ const menu = ref(false);
     @wheel.prevent
     @touchmove.prevent
     @scroll.prevent
-    class="absolute h-screen w-[310px] bg-white top-[4rem] left-0 z-50"
+    class="fixed h-screen w-[320px] bg-white top-[4rem] left-0 z-40 px-2"
     :class="`overflow-auto ease-in-out transition-all duration-300 ${
       menu ? '' : '-translate-x-full'
     }`"
@@ -27,42 +27,42 @@ const menu = ref(false);
           <nuxt-icon name="web/header/user-square" filled />
           <span class="text-yellow text-sm font-semibold">ثبت نام دوره ها</span>
         </nuxt-link>
-        <button class="btn p-0" @click="phoneDialog = true">
-          <nuxt-icon name="/" filled class="p-[12px] rounded-default bg-blue" />
-          <span class="text-blue text-sm font-bold">ورود کاربر</span>
-        </button>
       </div>
-      <div class="flex justify-center py-3">
+      <button class="btn p-0 mx-auto" @click="phoneDialog = true">
+        <nuxt-icon name="/" filled class="p-[12px] rounded-default bg-blue" />
+        <span class="text-blue text-sm font-bold">ورود کاربر</span>
+      </button>
+      <div class="flex justify-center my-6 mt-12">
         <a>صفحه اصلی</a>
       </div>
-      <div class="flex justify-center py-3">
+      <div class="flex justify-center my-6">
         <a>دوره‌های اصلی</a>
       </div>
-      <div class="flex justify-center py-3">
+      <div class="flex justify-center my-6">
         <a>دوره‌های مکمل</a>
       </div>
-      <div class="flex justify-center py-3">
+      <div class="flex justify-center my-6">
         <a>پادکست</a>
       </div>
-      <div class="flex justify-center py-3">
+      <div class="flex justify-center my-6">
         <a>دعوت به همکاری</a>
       </div>
-      <div class="flex justify-center py-3">
+      <div class="flex justify-center my-6">
         <a>درخواست نمایندگی</a>
       </div>
-      <div class="flex justify-center py-3">
+      <div class="flex justify-center my-6">
         <a>وبلاگ</a>
       </div>
-      <div class="flex justify-center py-3">
+      <div class="flex justify-center my-6">
         <a>ارتباط با ما</a>
       </div>
-      <div class="flex justify-center py-3">
+      <div class="flex justify-center my-6">
         <a>اسپانسرینگ</a>
       </div>
-      <div class="flex justify-center py-3">
+      <div class="flex justify-center my-6">
         <a>ویدیوها</a>
       </div>
-      <div class="flex justify-center py-3">
+      <div class="flex justify-center my-6">
         <a>درباره ما</a>
       </div>
     </div>
